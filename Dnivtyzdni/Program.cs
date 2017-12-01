@@ -14,7 +14,26 @@ namespace DniVTyzdni
             //Cykly.CyklusWhile();
             //Cykly.DoWhile();
             //Cykly.CyklusFor();
-            Cykly.CyklusForContinue();
+            //Cykly.CyklusForContinue();
+            //Cykly.HodnotVsReferencie();
+
+
+
+            // Auto autoPovodne = new Auto();
+            //autoPovodne.Farba = "cervena";
+
+            //Cykly.PrefarbiAuto(autoPovodne);
+            //Console.WriteLine(autoPovodne.Farba);
+
+            //int aPovodne = 10;
+            //Cykly.ZvysOJEdnicku(ref aPovodne); // ref odovzdava referencny typ nie hodnotovy !!! 
+            //Console.WriteLine(aPovodne);
+
+            Pole p = new Pole();
+            //p.VypisPole();
+            p.VypisPole();
+
+
             Console.ReadLine();
         }
     }

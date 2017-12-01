@@ -49,9 +49,9 @@ namespace DniVTyzdni
         public static void CyklusForContinue()
 
                 {
-                    for (int i = 0; i < 10; i++)
+                    for (int i = 0; i < 102; i++)
                     {
-                        int zbytok = i % 2;
+                        int zbytok = i % 2; // vzpise parne cisla od0 do 10 napr...
                         if (zbytok != 0)
                         {
 
@@ -63,7 +63,37 @@ namespace DniVTyzdni
                     }
 
                 }
-        
+        public static void HodnotVsReferencie()
+        {
+            int hodnota1 = 6;
+
+            int hodnota2;
+
+            hodnota2 = hodnota1;
+
+            hodnota2++;
+
+            Console.WriteLine(hodnota1);
+            Console.WriteLine(hodnota2);
+
+            Auto auto1 = new Auto();
+            auto1.Farba = "cervena";
+            Auto auto2 = auto1;
+            auto2.Farba = "cierna";
+
+            Console.WriteLine(auto1.Farba);
+            Console.WriteLine(auto2.Farba);
+            
+        }
+        public static void PrefarbiAuto(Auto auto)
+        {
+            auto.Farba = "biela";
+        }
+        public static void ZvysOJEdnicku(ref int a)
+        {
+            a++;
+
+        }
     }
     
 }
